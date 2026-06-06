@@ -12,6 +12,7 @@ title: Home
     <div class="service-box"><h3>Customization</h3><p>Customize Odoo to match your workflows and unique business processes.</p></div>
     <div class="service-box"><h3>Integration</h3><p>Seamless integration with third party apps, systems and platforms.</p></div>
     <div class="service-box"><h3>Training & Support</h3><p>User training, documentation and ongoing support for your team.</p></div>
+  </div>
 </section>
 
 <section id="about" class="intro">

@@ -3,14 +3,6 @@ layout: default
 title: Home
 ---
 
-<!-- HERO COVER -->
-<section id="cover" style="background: white;">
-  <div>
-    <div><h1>ERP Solutions for Growing Businesses</h1><h3>Implement. Automate. Scale.</h3><p>Helping businesses streamline operations with Odoo ERP and business software.</p></div>
-    <div><img src="{{ '/assets/img/odoo_apps.png' | relative_url }}" style="width: 300px; height: 300px;" alt="Odoo Apps"></div>
-  </div>
-</section>
-
 <!-- NEW SERVICES SECTION -->
 <section id="services" style="background: white;">
   <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">SERVICES</h2>

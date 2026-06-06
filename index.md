@@ -20,7 +20,7 @@ title: Home
   <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">OUR PROCESS</h2>
   <h2 style="text-align:center; margin-bottom:40px;">A Simple, Proven Approach</h2>
   <div class="services-grid">
-    <div class="service-box"><h3>Discover</h3><p>We understand your business, challenges and goals.</p></div>
+    <div class="service-box"><img src="{{ '/assets/img/odoo.png' | relative_url }}" alt="Odoo ERP"><h3>Discover</h3><p>We understand your business, challenges and goals.</p></div>
     <div class="service-box"><h3>Plan</h3><p>We design the right solution and implementation roadmap.</p></div>
     <div class="service-box"><h3>Implement</h3><p>We configure, test and deploy with minimal disruption.</p></div>
     <div class="service-box"><h3>Support</h3><p>We provide ongoing support to help you grow.</p></div>

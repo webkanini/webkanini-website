@@ -72,7 +72,7 @@ title: Home
   <p style="margin-bottom:10px;">Webkanini is an IT consulting company specializing in Odoo ERP implementation, customization and support. Our mission is to help businesses streamline operations, improve efficiency and achieve sustainable growth through the right technology.</p>
 
   <p>With more than 15 years of industry experience, we combine technical expertise with a business-first mindset to deliver solutions that make a real impact.</p>
-  <img src="{{ '/assets/img/odoo_logo.png' | relative_url }}" style="width: 250px; height: 200px;" alt="Odoo">
+  <img src="{{ '/assets/img/odoo_logo.png' | relative_url }}" style="width: 3000px; height: 200px;" alt="Odoo">
 </section>
 
 

@@ -5,7 +5,7 @@ title: Home
 
 <!-- NEW SERVICES SECTION -->
 <section id="services">
-  <h2 style="text-align:center; margin-bottom:40px;">SERVICES</h2>
+  <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">SERVICES</h2>
   <h3 style="text-align:center; margin-bottom:40px;">How We Can Help</h3>
   <div class="services-grid">
     <div class="service-box"><h3>Implementation</h3><p>End-to-end setup of Odoo ERP tailored to your business.</p></div>
@@ -17,7 +17,7 @@ title: Home
 
 <!-- OUR PROCESS SECTION -->
 <section id="process">
-  <h2 style="text-align:center; margin-bottom:40px;">OUR PROCESS</h2>
+  <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">OUR PROCESS</h2>
   <h3 style="text-align:center; margin-bottom:40px;">A Simple, Proven Approach</h3>
   <div class="services-grid">
     <div class="service-box"><h3>Discover</h3><p>We understand your business, challenges and goals.</p></div>
@@ -29,7 +29,7 @@ title: Home
 
 <!-- WHY WEBKANINI SECTION -->
 <section id="why">
-  <h2 style="text-align:center; margin-bottom:40px;">WHY WEBKANINI</h2>
+  <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">WHY WEBKANINI</h2>
   <h3 style="text-align:center; margin-bottom:40px;">Why Businesses Choose Us</h3>
   <div class="services-grid">
     <div class="service-box"><h3>15+ years of Experience</h3><p>Deep expertise in ERP implementation, business processes and automation across multiple industries.</p></div>
@@ -40,7 +40,7 @@ title: Home
 
 <section id="about" class="intro">
   <h2>About Us</h2>
-  <p class="mb-20">Webkanini is an IT consulting company specializing in Odoo ERP implementation, customization and support. Our mission is to help businesses streamline operations, improve efficiency and achieve sustainable growth through the right technology.</p>
+  <p style="margin-bottom:10px;">Webkanini is an IT consulting company specializing in Odoo ERP implementation, customization and support. Our mission is to help businesses streamline operations, improve efficiency and achieve sustainable growth through the right technology.</p>
 
   <p>With more than 15 years of industry experience, we combine technical expertise with a business-first mindset to deliver solutions that make a real impact.</p>
 </section>

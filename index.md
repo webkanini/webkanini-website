@@ -6,7 +6,7 @@ title: Home
 <!-- NEW SERVICES SECTION -->
 <section id="services">
   <h2 style="text-align:center; margin-bottom:40px;">SERVICES</h2>
-  <h2 style="text-align:center; margin-bottom:40px;">How We Can Help</h2>
+  <h3 style="text-align:center; margin-bottom:40px;">How We Can Help</h3>
   <div class="services-grid">
     <div class="service-box"><h3>Implementation</h3><p>End-to-end setup of Odoo ERP tailored to your business.</p></div>
     <div class="service-box"><h3>Customization</h3><p>Customize Odoo to match your workflows and unique business processes.</p></div>

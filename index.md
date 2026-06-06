@@ -16,7 +16,7 @@ title: Home
 </section>
 
 <!-- OUR PROCESS SECTION -->
-<section id="services">
+<section id="process">
   <h2 style="text-align:center; margin-bottom:40px;">OUR PROCESS</h2>
   <h3 style="text-align:center; margin-bottom:40px;">A Simple, Proven Approach</h3>
   <div class="services-grid">
@@ -27,9 +27,20 @@ title: Home
   </div>
 </section>
 
+<!-- WHY WEBKANINI SECTION -->
+<section id="why">
+  <h2 style="text-align:center; margin-bottom:40px;">WHY WEBKANINI</h2>
+  <h3 style="text-align:center; margin-bottom:40px;">Why Businesses Choose Us</h3>
+  <div class="services-grid">
+    <div class="service-box"><h3>15+ years of Experience</h3><p>Deep expertise in ERP implementation, business processes and automation across multiple industries.</p></div>
+    <div class="service-box"><h3>Business-Focused Approach</h3><p>We don’t just implement software. We help you solve business problems and create value.</p></div>
+    <div class="service-box"><h3>Long-Term Partnership</h3><p>We work as your technology partner, providing reliable support and continuous improvement.</p></div>
+  </div>
+</section>
+
 <section id="about" class="intro">
   <h2>About Us</h2>
-  <p>Webkanini is an IT consulting company specializing in Odoo ERP implementation, customization and support. Our mission is to help businesses streamline operations, improve efficiency and achieve sustainable growth through the right technology.</p>
+  <p class="mb-20">Webkanini is an IT consulting company specializing in Odoo ERP implementation, customization and support. Our mission is to help businesses streamline operations, improve efficiency and achieve sustainable growth through the right technology.</p>
 
   <p>With more than 15 years of industry experience, we combine technical expertise with a business-first mindset to deliver solutions that make a real impact.</p>
 </section>

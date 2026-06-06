@@ -125,3 +125,16 @@ footer a:hover { text-decoration: underline; }
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
+
+/* Mobile stack (≤768px) */
+  @media (max-width: 768px) {
+    #cover > div {
+      grid-template-columns: 1fr !important;
+      text-align: center;
+      gap: 32px;
+    }
+    #cover .left-text p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

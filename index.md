@@ -3,11 +3,32 @@ layout: default
 title: Home
 ---
 
-<!-- HERO COVER -->
+<!-- HERO COVER 
 <section id="cover" style="background: white;">
   <div>
     <div><h1>ERP Solutions for Growing Businesses</h1><h3>Implement. Automate. Scale.</h3><p>Helping businesses streamline operations with Odoo ERP and business software.</p></div>
     <div><img src="{{ '/assets/img/odoo_apps.png' | relative_url }}" style="width: 300px; height: 300px;" alt="Odoo Apps"></div>
+  </div>
+</section>-->
+
+<section id="cover" style="background: white; padding: 60px 20px;">
+  <div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 40% 60%; gap: 48px; align-items: center;">
+    <div>
+      <h1 style="font-size: 48px; font-weight: 700; line-height: 1.2; color: #0F172A; margin-bottom: 16px;">
+        ERP Solutions for Growing Businesses
+      </h1>
+      <h3 style="font-size: 24px; font-weight: 600; color: #2563EB; margin-bottom: 20px;">
+        Implement. Automate. Scale.
+      </h3>
+      <p style="font-size: 18px; line-height: 1.6; color: #475569; max-width: 480px;">
+        Helping businesses streamline operations with Odoo ERP and business software.
+      </p>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <img src="{{ '/assets/img/odoo_apps.png' | relative_url }}" 
+           alt="Odoo Apps" 
+           style="width: 100%; max-width: 400px; height: auto; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
+    </div>
   </div>
 </section>
 

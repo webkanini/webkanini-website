@@ -58,6 +58,7 @@ section.visible { opacity: 1; transform: translateY(0); }
 .intro { text-align: center; margin-bottom: 60px; }
 .intro h2 { font-size: 2rem; margin-bottom: 20px; }
 .intro p { font-size: 1.1rem; color: #555; max-width: 700px; margin: auto; }
+.intro p + p { margin-top: 1.5rem;}
 
 /* Horizontal scroll logos */
 .logos-container {

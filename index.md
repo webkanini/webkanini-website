@@ -3,39 +3,15 @@ layout: default
 title: Home
 ---
 
-<section id="about" class="intro">
-  <h2>About Us</h2>
-  <p>Webkanini is an IT consulting company specializing in Odoo ERP implementation, customization and support. Our mission is to help businesses streamline operations, improve efficiency and achieve sustainable growth through the right technology.</p>
-
-  <p>With more than 15 years of industry experience, we combine technical expertise with a business-first mindset to deliver solutions that make a real impact.</p>
-</section>
-
-
 <!-- NEW SERVICES SECTION -->
 <section id="services">
-  <h2 style="text-align:center; margin-bottom:40px;">Our Services</h2>
+  <h2 style="text-align:center; margin-bottom:40px;">SERVICES</h2>
+  <h2 style="text-align:center; margin-bottom:40px;">How We Can Help</h2>
   <div class="services-grid">
-    <div class="service-box"><h3>Odoo New Implementation</h3><p>End-to-end setup of Odoo ERP tailored to your business.</p></div>
-    <div class="service-box"><h3>ERPNext New Implementation</h3><p>Complete deployment of ERPNext for SMEs and enterprises.</p></div>
-    <div class="service-box"><h3>Migration to Odoo</h3><p>Seamlessly migrate from legacy systems to Odoo ERP.</p></div>
-    <div class="service-box"><h3>Migration to ERPNext</h3><p>Move your operations from old systems into ERPNext.</p></div>
-    <div class="service-box"><h3>Customization</h3><p>Custom modules, workflows, and features tailored to your needs.</p></div>
-    <div class="service-box"><h3>Integration</h3><p>Integrate Odoo/ERPNext with CRMs, payment gateways, APIs.</p></div>
-    <div class="service-box"><h3>Support & Maintenance</h3><p>Ongoing monitoring, bug fixes, and regular updates.</p></div>
-    <div class="service-box"><h3>Training</h3><p>End-user and admin training for Odoo & ERPNext platforms.</p></div>
-    <div class="service-box"><h3>Performance Optimization</h3><p>Optimize ERP speed, scaling, and efficiency.</p></div>
-    <div class="service-box"><h3>Data Migration</h3><p>Clean, secure migration of master & transaction data.</p></div>
-    <div class="service-box"><h3>Mobile App Development</h3><p>Extend ERP with iOS & Android mobile solutions.</p></div>
-    <div class="service-box"><h3>Cloud Hosting</h3><p>Deploy ERP on secure cloud servers with high availability.</p></div>
-    <div class="service-box"><h3>On-Premise Deployment</h3><p>Setup ERP on your in-house servers with full control.</p></div>
-    <div class="service-box"><h3>Third-Party Add-ons</h3><p>Install & configure popular Odoo/ERPNext marketplace apps.</p></div>
-    <div class="service-box"><h3>Accounting & Finance Setup</h3><p>Chart of accounts, taxes, and financial reports configuration.</p></div>
-    <div class="service-box"><h3>HR & Payroll Solutions</h3><p>Automated HR, attendance, and payroll workflows.</p></div>
-    <div class="service-box"><h3>E-commerce Integration</h3><p>Connect ERP with Magento, Shopify, WooCommerce.</p></div>
-    <div class="service-box"><h3>Manufacturing & Inventory</h3><p>Advanced manufacturing, BOM, and stock management setup.</p></div>
-    <div class="service-box"><h3>Business Intelligence</h3><p>Custom dashboards and analytics for better insights.</p></div>
-    <div class="service-box"><h3>Consulting & Advisory</h3><p>ERP readiness assessment, planning, and strategy.</p></div>
-  </div>
+    <div class="service-box"><h3>Implementation</h3><p>End-to-end setup of Odoo ERP tailored to your business.</p></div>
+    <div class="service-box"><h3>Customization</h3><p>Customize Odoo to match your workflows and unique business processes.</p></div>
+    <div class="service-box"><h3>Integration</h3><p>Seamless integration with third party apps, systems and platforms.</p></div>
+    <div class="service-box"><h3>Training & Support</h3><p>User training, documentation and ongoing support for your team.</p></div>
 </section>
 
 <section id="technologies">
@@ -52,6 +28,13 @@ title: Home
     <div class="logos"><img src="{{ '/assets/img/github.jpeg' | relative_url }}" alt="Github"></div>
     <div class="logos"><img src="{{ '/assets/img/docker.svg' | relative_url }}" alt="Docker"></div>
   </div>
+</section>
+
+<section id="about" class="intro">
+  <h2>About Us</h2>
+  <p>Webkanini is an IT consulting company specializing in Odoo ERP implementation, customization and support. Our mission is to help businesses streamline operations, improve efficiency and achieve sustainable growth through the right technology.</p>
+
+  <p>With more than 15 years of industry experience, we combine technical expertise with a business-first mindset to deliver solutions that make a real impact.</p>
 </section>
 
 

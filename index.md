@@ -4,9 +4,9 @@ title: Home
 ---
 
 <!-- NEW SERVICES SECTION -->
-<section id="services">
+<section id="services" style="background: white;">
   <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">SERVICES</h2>
-  <h3 style="text-align:center; margin-bottom:40px;">How We Can Help</h3>
+  <h2 style="text-align:center; margin-bottom:40px;">How We Can Help</h2>
   <div class="services-grid">
     <div class="service-box"><h3>Implementation</h3><p>End-to-end setup of Odoo ERP tailored to your business.</p></div>
     <div class="service-box"><h3>Customization</h3><p>Customize Odoo to match your workflows and unique business processes.</p></div>
@@ -16,9 +16,9 @@ title: Home
 </section>
 
 <!-- OUR PROCESS SECTION -->
-<section id="process">
+<section id="process" style="background: #f8fafc;">
   <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">OUR PROCESS</h2>
-  <h3 style="text-align:center; margin-bottom:40px;">A Simple, Proven Approach</h3>
+  <h2 style="text-align:center; margin-bottom:40px;">A Simple, Proven Approach</h2>
   <div class="services-grid">
     <div class="service-box"><h3>Discover</h3><p>We understand your business, challenges and goals.</p></div>
     <div class="service-box"><h3>Plan</h3><p>We design the right solution and implementation roadmap.</p></div>
@@ -28,9 +28,9 @@ title: Home
 </section>
 
 <!-- WHY WEBKANINI SECTION -->
-<section id="why">
+<section id="why" style="background: #ffffff;">
   <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">WHY WEBKANINI</h2>
-  <h3 style="text-align:center; margin-bottom:40px;">Why Businesses Choose Us</h3>
+  <h2 style="text-align:center; margin-bottom:40px;">Why Businesses Choose Us</h2>
   <div class="services-grid">
     <div class="service-box"><h3>15+ years of Experience</h3><p>Deep expertise in ERP implementation, business processes and automation across multiple industries.</p></div>
     <div class="service-box"><h3>Business-Focused Approach</h3><p>We don’t just implement software. We help you solve business problems and create value.</p></div>
@@ -38,7 +38,7 @@ title: Home
   </div>
 </section>
 
-<section id="about" class="intro">
+<section id="about" class="intro" style="background: #f8fafc;">
   <h2>About Us</h2>
   <p style="margin-bottom:10px;">Webkanini is an IT consulting company specializing in Odoo ERP implementation, customization and support. Our mission is to help businesses streamline operations, improve efficiency and achieve sustainable growth through the right technology.</p>
 
@@ -46,9 +46,10 @@ title: Home
 </section>
 
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Have a project or query? Reach out to us!</p>
+<section id="contact" style="background: #ffffff;">
+  <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">CONTACT US</h2>
+  <h2 style="text-align:center; margin-bottom:40px;">Have a project or query? Reach out to us!</h2>
   <p>Email: <a href="mailto:info@webkanini.com">info@webkanini.com</a></p>
+  <p>Whatsapp: +91 9944902484</p>
   <p>Website: <a href="https://www.webkanini.com" target="_blank">www.webkanini.com</a></p>
 </section>

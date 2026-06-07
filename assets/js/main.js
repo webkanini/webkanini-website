@@ -22,3 +22,35 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+// Below is the code for the contact form popup using Tally widget
+document.addEventListener('DOMContentLoaded', function () {
+
+    const contactLink = document.getElementById('contact-link');
+
+    if (contactLink) {
+
+        contactLink.addEventListener('click', function (e) {
+
+            e.preventDefault();
+
+            if (typeof Tally !== 'undefined') {
+
+                Tally.openPopup('eqzxRk', {
+                    layout: 'modal',
+                    width: 700,
+                    overlay: true,
+                    autoClose: 5000
+                });
+
+            } else {
+
+                console.error('Tally widget not loaded.');
+
+            }
+
+        });
+
+    }
+
+});

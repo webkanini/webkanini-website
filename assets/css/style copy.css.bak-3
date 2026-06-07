@@ -3,80 +3,63 @@
 html { scroll-behavior: smooth; }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; background-color: #f9f9f9; }
 
-/* Header with centered navigation */
+/* Sticky Navigation */
 header {
   position: relative;
   color: white;
+  text-align: center;
+  padding: 60px 20px 60px;
   background: linear-gradient(135deg, #0d47a1, #1976d2);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
-  flex-wrap: wrap;
 }
 
-.logo h1 {
-  font-size: 1.6rem;
-  margin: 0;
-  white-space: nowrap;
-}
+/* Navigation styles */
 
-/* Desktop navigation container – centered */
-.main-nav {
-  flex: 2;
-  text-align: center;
-}
-
-.main-nav ul {
-  display: inline-flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s, transform 0.3s;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.main-nav a:hover, .main-nav a.active {
-  color: #ffca28;
-  transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Invisible spacer to balance left/right (so menu is truly centered) */
-.header-spacer {
-  flex: 1;
-  visibility: hidden;
-}
-
-/* Hide hamburger on desktop */
+/* Hide hamburger button on desktop */
 .hamburger {
-  display: none;
+  display: none!important;
   background: none;
   border: none;
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
   padding: 5px 10px;
+  margin-left: auto;
 }
 
-/* Hero content inside header (title, paragraph, button) */
-header .hero-content {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  width: 100%;
+/* Wrapper for nav links – initially visible on desktop */
+.nav-links {
+  display: flex;
+  gap: 0; /* your existing margins on <a> handle spacing */
 }
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(13,71,161,0.95);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+nav a:hover, nav a.active {
+  color: #ffca28;
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* end of navigation styles */
 
 header h1 { font-size: 3rem; margin-bottom: 20px; animation: fadeInDown 1s ease forwards; }
 header p { font-size: 1.2rem; color: #cfd8dc; margin-bottom: 30px; animation: fadeInUp 1s ease forwards; }
@@ -98,7 +81,9 @@ section.visible { opacity: 1; transform: translateY(0); }
 .intro h2 { font-size: 2rem; margin-bottom: 20px; }
 .intro p { font-size: 1.1rem; color: #555; max-width: 700px; margin: auto; }
 
-.mb-20 { margin-bottom: 20px; }
+.mb-20 {
+    margin-bottom: 20px;
+}
 
 /* Horizontal scroll logos */
 .logos-container {
@@ -163,97 +148,92 @@ footer a:hover { text-decoration: underline; }
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 
-/* Mobile (≤768px) */
-@media (max-width: 768px) {
-  #cover > div {
-    grid-template-columns: 1fr !important;
-    text-align: center;
-    gap: 32px;
-  }
-  #cover .left-text p {
-    margin-left: auto;
-    margin-right: auto;
+/* Mobile stack (≤768px) */
+  @media (max-width: 768px) {
+    #cover > div {
+      grid-template-columns: 1fr !important;
+      text-align: center;
+      gap: 32px;
+    }
+    #cover .left-text p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      padding: 40px 20px 30px;  /* reduced top/bottom padding */
+    }
+    
+    header h1 {
+      font-size: 1.8rem;        /* optionally smaller font */
+      margin-bottom: 10px;      /* reduced space under title */
+    }
+    /* Make nav vertical and align items */
+    nav {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 10px;
+    }
+      /* Show hamburger button */
+    .hamburger {
+      display: block!important;
+      align-self: flex-end;
+    }
+    /* Hide nav links initially (collapsed) */
+    .nav-links {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    /* When open class is added, show the links */
+    .nav-links.open {
+      max-height: 300px; /* enough for all your links */
+    }
+
+    /* Override nav a styles for vertical layout */
+    nav a {
+      margin: 5px 0;
+      text-align: center;
+      padding: 12px 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Remove hover scale on mobile (optional, better for touch) */
+    nav a:hover {
+      transform: none;
+    }
+
   }
 
-  /* Reduce header padding and title size */
-  header {
-    padding: 20px 20px;
-  }
-  .logo h1 {
-    font-size: 1.2rem;
-    white-space: normal;
-  }
-  .header-spacer {
-    display: none;
-  }
-  /* Show hamburger */
-  .hamburger {
-    display: block;
-  }
-  /* Transform navigation for mobile */
-  .main-nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(13, 71, 161, 0.98);
-    text-align: center;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-  .main-nav.open {
-    max-height: 300px;
-  }
-  .main-nav ul {
-    flex-direction: column;
-    gap: 0;
-    display: flex;
-  }
-  .main-nav li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .main-nav a {
-    display: block;
-    padding: 12px;
-    margin: 0;
-    border-radius: 0;
-  }
-  .main-nav a:hover {
-    transform: none;
+  /* Schedule free consulation button */
+  .btn-consult {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #2563EB;
+    color: white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0 28px;
+    height: 52px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    cursor: pointer;
+    border: none;
   }
 
-  header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+  .btn-consult:hover {
+    background-color: #1D4ED8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.3);
   }
-}
 
-/* Schedule free consultation button */
-.btn-consult {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background-color: #2563EB;
-  color: white;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0 28px;
-  height: 52px;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-  cursor: pointer;
-  border: none;
-}
-.btn-consult:hover {
-  background-color: #1D4ED8;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.3);
-}
-.btn-consult:active {
-  transform: translateY(0);
-}
+  .btn-consult:active {
+    transform: translateY(0);
+  }

@@ -81,8 +81,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const navLinks = document.getElementById('navLinks');
 
   if (hamburger && navLinks) {
+    // Toggle menu when hamburger is clicked
     hamburger.addEventListener('click', function() {
       navLinks.classList.toggle('open');
+    });
+
+    // Auto-collapse when any nav link is clicked
+    const links = navLinks.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+      });
     });
   }
 });

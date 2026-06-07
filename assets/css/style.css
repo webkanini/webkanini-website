@@ -19,7 +19,7 @@ header {
 
 /* Hide hamburger button on desktop */
 .hamburger {
-  display: none;
+  display: none!important;
   background: none;
   border: none;
   color: white;
@@ -169,7 +169,7 @@ footer a:hover { text-decoration: underline; }
     }
       /* Show hamburger button */
     .hamburger {
-      display: block;
+      display: block!important;
       align-self: flex-end;
     }
     /* Hide nav links initially (collapsed) */

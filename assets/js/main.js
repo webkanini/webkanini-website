@@ -74,3 +74,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
+// Below is the code for the hamburger menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburgerBtn');
+  const navLinks = document.getElementById('navLinks');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+  }
+});

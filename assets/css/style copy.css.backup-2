@@ -14,27 +14,6 @@ header {
   animation: gradientAnimation 15s ease infinite;
   z-index: 10;
 }
-
-/* Navigation styles */
-
-/* Hide hamburger button on desktop */
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.8rem;
-  cursor: pointer;
-  padding: 5px 10px;
-  margin-left: auto;
-}
-
-/* Wrapper for nav links – initially visible on desktop */
-.nav-links {
-  display: flex;
-  gap: 0; /* your existing margins on <a> handle spacing */
-}
-
 nav {
   position: sticky;
   top: 0;
@@ -59,9 +38,6 @@ nav a:hover, nav a.active {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.1);
 }
-
-
-/* end of navigation styles */
 
 header h1 { font-size: 3rem; margin-bottom: 20px; animation: fadeInDown 1s ease forwards; }
 header p { font-size: 1.2rem; color: #cfd8dc; margin-bottom: 30px; animation: fadeInUp 1s ease forwards; }
@@ -161,44 +137,6 @@ footer a:hover { text-decoration: underline; }
       margin-left: auto;
       margin-right: auto;
     }
-    /* Make nav vertical and align items */
-    nav {
-      flex-direction: column;
-      align-items: stretch;
-      padding: 10px;
-    }
-      /* Show hamburger button */
-    .hamburger {
-      display: block;
-      align-self: flex-end;
-    }
-    /* Hide nav links initially (collapsed) */
-    .nav-links {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-out;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    /* When open class is added, show the links */
-    .nav-links.open {
-      max-height: 300px; /* enough for all your links */
-    }
-
-    /* Override nav a styles for vertical layout */
-    nav a {
-      margin: 5px 0;
-      text-align: center;
-      padding: 12px 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    /* Remove hover scale on mobile (optional, better for touch) */
-    nav a:hover {
-      transform: none;
-    }
-
   }
 
   /* Schedule free consulation button */

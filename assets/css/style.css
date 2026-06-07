@@ -138,3 +138,34 @@ footer a:hover { text-decoration: underline; }
       margin-right: auto;
     }
   }
+
+  /* Schedule free consulation button */
+  .btn-consult {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #2563EB;
+    color: white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0 28px;
+    height: 52px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-consult:hover {
+    background-color: #1D4ED8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.3);
+  }
+
+  .btn-consult:active {
+    transform: translateY(0);
+  }

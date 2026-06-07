@@ -78,20 +78,28 @@ document.addEventListener('DOMContentLoaded', function () {
 // Below is the code for the hamburger menu toggle
 document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.getElementById('hamburgerBtn');
-  const navLinks = document.getElementById('navLinks');
+  const navMenu = document.getElementById('mainNav');
+  const navLinks = document.querySelectorAll('#mainNav a'); // select all menu links
 
-  if (hamburger && navLinks) {
-    // Toggle menu when hamburger is clicked
-    hamburger.addEventListener('click', function() {
-      navLinks.classList.toggle('open');
-    });
+  // Toggle menu when hamburger is clicked
+  hamburger.addEventListener('click', function(e) {
+    e.stopPropagation(); // avoid accidental closing
+    navMenu.classList.toggle('open');
+  });
 
-    // Auto-collapse when any nav link is clicked
-    const links = navLinks.querySelectorAll('a');
-    links.forEach(link => {
-      link.addEventListener('click', function() {
-        navLinks.classList.remove('open');
-      });
+  // Close menu when a link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      navMenu.classList.remove('open');
     });
-  }
+  });
+
+  // Optional: close menu if user clicks outside of it (improves UX)
+  document.addEventListener('click', function(event) {
+    const isClickInsideMenu = navMenu.contains(event.target);
+    const isClickOnHamburger = hamburger.contains(event.target);
+    if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('open')) {
+      navMenu.classList.remove('open');
+    }
+  });
 });

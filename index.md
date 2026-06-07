@@ -23,10 +23,7 @@ title: Home
       <p style="font-size: 18px; line-height: 1.6; color: #475569; max-width: 480px; margin-bottom: 16px;">
         Helping businesses streamline operations with Odoo ERP and business software.
       </p>
-      <a href="https://calendly.com/tmkhalid/30min" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="btn-consult">
+      <a href="#" id="consultation-btn" class="cta-btn">
         Schedule 30 Mins Free Consultation
       </a>
     </div>

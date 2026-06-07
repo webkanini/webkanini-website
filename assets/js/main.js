@@ -54,3 +54,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+// Below is the code for the consultation button popup using Calendly widget
+document.addEventListener('DOMContentLoaded', function () {
+
+    const consultationBtn = document.getElementById('consultation-btn');
+
+    if (consultationBtn) {
+
+        consultationBtn.addEventListener('click', function (e) {
+
+            e.preventDefault();
+
+            Calendly.initPopupWidget({
+                url: 'https://calendly.com/tmkhalid/30min'
+            });
+
+        });
+
+    }
+
+});

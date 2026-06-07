@@ -25,9 +25,13 @@ title: Home
       </p>
     </div>
     <div style="display: flex; justify-content: center;">
+      <!--<img src="{{ '/assets/img/odoo_apps.png' | relative_url }}" 
+           alt="Odoo Apps" 
+           style="width: 100%; max-width: 400px; height: auto; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">-->
       <img src="{{ '/assets/img/odoo_apps.png' | relative_url }}" 
            alt="Odoo Apps" 
-           style="width: 100%; max-width: 400px; height: auto; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
+           style="width: 300px; height: 300px; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
+           
     </div>
   </div>
 </section>

@@ -20,7 +20,7 @@ title: Home
       <h3 style="font-size: 24px; font-weight: 600; color: #2563EB; margin-bottom: 20px;">
         Implement. Automate. Scale.
       </h3>
-      <p style="font-size: 18px; line-height: 1.6; color: #475569; max-width: 480px;">
+      <p style="font-size: 18px; line-height: 1.6; color: #475569; max-width: 480px; margin-bottom: 16px;">
         Helping businesses streamline operations with Odoo ERP and business software.
       </p>
       <a href="https://calendly.com/tmkhalid/30min" 

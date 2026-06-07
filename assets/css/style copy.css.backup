@@ -3,52 +3,54 @@
 html { scroll-behavior: smooth; }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; background-color: #f9f9f9; }
 
-/* ===== Header ===== */
-
-.site-header {
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Sticky Navigation */
+header {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  z-index: 10;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(13,71,161,0.95);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+nav a:hover, nav a.active {
+  color: #ffca28;
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.site-header .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
-
-    height: 80px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header h1 { font-size: 3rem; margin-bottom: 20px; animation: fadeInDown 1s ease forwards; }
+header p { font-size: 1.2rem; color: #cfd8dc; margin-bottom: 30px; animation: fadeInUp 1s ease forwards; }
+header .cta-btn {
+  background-color: #ffca28;
+  color: #0d47a1;
+  padding: 15px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
 }
-
-.logo {
-    text-decoration: none;
-    color: #000;
-    font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.main-nav {
-    display: flex;
-    gap: 50px;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: #111827;
-    font-size: 1.4rem;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.main-nav a:hover {
-    color: #2563eb;
-}
+header .cta-btn:hover { transform: scale(1.05); background-color: #ffc107; }
 
 section { padding: 80px 20px; max-width: 1200px; margin: auto; opacity: 0; transform: translateY(50px); transition: all 0.8s ease-in-out; }
 section.visible { opacity: 1; transform: translateY(0); }
@@ -61,7 +63,17 @@ section.visible { opacity: 1; transform: translateY(0); }
     margin-bottom: 20px;
 }
 
-/* above code is from chatgpt, below code is from original file */
+/* Horizontal scroll logos */
+.logos-container {
+  overflow-x: auto;
+  padding: 20px 0;
+  display: flex;
+  gap: 40px;
+  scrollbar-width: none;
+}
+.logos-container::-webkit-scrollbar { display: none; }
+.logos img { max-width: 100px; filter: grayscale(100%); transition: filter 0.3s, transform 0.3s, box-shadow 0.3s; border-radius: 10px; }
+.logos img:hover { filter: grayscale(0%); transform: scale(1.2); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
 
 /* Contact Section */
 #contact { text-align: center; }

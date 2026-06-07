@@ -22,5 +22,3 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
-
-  <script async src="https://tally.so/widgets/embed.js"></script>

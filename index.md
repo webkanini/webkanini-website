@@ -36,6 +36,17 @@ title: Home
   </div>
 </section>
 
+
+<!-- ODOO SECTION -->
+<section id="odoo" class="intro" style="background: #f8fafc;">
+  <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">ODOO ERP</h2>
+  <h2 style="text-align:center; margin-bottom:40px;">How It Helps Your Business</h2>
+  <p style="margin-bottom:10px;">Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.</p>
+
+  <p>Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.</p>
+  <img src="{{ '/assets/img/odoo_logo.png' | relative_url }}" style="width: 100px; max-width:200; height: auto;" alt="Odoo">
+</section>
+
 <!-- NEW SERVICES SECTION -->
 <section id="services" style="background: white;">
   <h2 style="text-align:center; margin-bottom:10px;color: #0d47a1;">SERVICES</h2>

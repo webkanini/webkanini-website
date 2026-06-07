@@ -30,7 +30,7 @@ title: Home
            style="width: 100%; max-width: 400px; height: auto; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">-->
       <img src="{{ '/assets/img/odoo_apps.png' | relative_url }}" 
            alt="Odoo Apps" 
-           style="width: 100%; max-width: 600px; height: 500px; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
+           style="width: 100%; max-width: 650px; height: auto; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
            
     </div>
   </div>
@@ -76,7 +76,7 @@ title: Home
   <p style="margin-bottom:10px;">Webkanini is an IT consulting company specializing in Odoo ERP implementation, customization and support. Our mission is to help businesses streamline operations, improve efficiency and achieve sustainable growth through the right technology.</p>
 
   <p>With more than 15 years of industry experience, we combine technical expertise with a business-first mindset to deliver solutions that make a real impact.</p>
-  <img src="{{ '/assets/img/odoo_logo.png' | relative_url }}" style="width: 300px; height: 200px;" alt="Odoo">
+  <!--<img src="{{ '/assets/img/odoo_logo.png' | relative_url }}" style="width: 300px; height: 200px;" alt="Odoo">-->
 </section>
 
 
